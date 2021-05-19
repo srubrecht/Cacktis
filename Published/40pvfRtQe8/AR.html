@@ -1,0 +1,54 @@
+<!doctype HTML>
+<!-- copyright Shaun Rubrecht sr@shaunrubrecht.com. This demo was created for Darshan Mehta -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNWWPRCTP7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZNWWPRCTP7');
+</script>
+        
+    </head>
+    <script src="https://raw.githack.com/srubrecht/Cacktis/main/JS/af1.js"></script> 
+    <script src="https://raw.githack.com/srubrecht/Cacktis/main/JS/af2.js"></script>
+    <script src="https://raw.githack.com/srubrecht/Cacktis/main/JS/af3.js"></script> 
+
+    <body style='margin : 0px; overflow: hidden;'>
+        
+        <style> div.fixed { position: fixed; bottom: 60px; left: 10px; width: 65px; } </style>
+        <style> div.fixed2 { position: fixed; bottom: 60px; right: 10px; width: 65px; } </style>
+        <style> div.fixed3 { position: fixed; bottom: 2px; left 0px; right: 0px; width: 100%; text-align: center; } </style>
+        
+    
+        <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 8x8;">
+
+        <a-assets>
+            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/srubrecht/Cacktis/main/Published/o834nvyWpd/BizCardSphere.gltf"></a-asset-item>
+        </a-assets>
+       
+        <a-marker type="pattern" preset="custom" url="https://raw.githubusercontent.com/srubrecht/Cacktis/main/Markers/pattern-cact.patt" smooth="true" smoothCount="10" >    
+            <a-entity
+                animation-mixer
+                gltf-model="#animated-asset"
+                scale=" .5 .5 .5">
+            </a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+        </a-scene>
+        
+        <div class="fixed"> <a href="https://raw.githubusercontent.com/srubrecht/Cacktis/main/Published/o834nvyWpd/Shaun.vcf"> 
+            <img src="https://raw.githubusercontent.com/srubrecht/Cacktis/main/Buttons/download.png" alt="Download vCard" style="width:65px;height:65px;"> </a> </div>
+        <div class="fixed2"> <a href="https://www.linkedin.com/in/shaunrubrecht" target="_blank"> 
+            <img src="https://raw.githubusercontent.com/srubrecht/Cacktis/main/Buttons/linkedin.png" alt="View LinkedIn" style="width:65px;height:65px;"> </a> </div>
+        <div class="fixed3"> <a href="https://www.cacktis.com" target="_blank"> 
+            <img src="https://raw.githubusercontent.com/srubrecht/Cacktis/main/Buttons/CacktisLink.png" alt="Cacktis" style="width:150px;height:18px;"> </a> </div>
+            
+    </body>
+</html>
