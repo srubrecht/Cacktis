@@ -24,12 +24,13 @@
         <style> div.fixed2 { position: fixed; bottom: 60px; right: 10px; width: 65px; } </style>
         <style> div.fixed3 { position: fixed; bottom: 2px; left 0px; right: 0px; width: 100%; text-align: center; } </style>
         
-        
+        <script>
         <var renderer = new THREE.WebGLRenderer({
 		antialias: true,
 		alpha: true,
         logarithmicDepthBuffer: true
-	});>
+	});
+	</script>
         
         <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 8x8;" renderer="logarithmicDepthBuffer: true">
         
